@@ -1,13 +1,13 @@
 ################################################################################
 ################################ TASK__1 #######################################
 ################################################################################
-
+'''
 """
 Ques 1 - celsius to far
 """
 degree = float(input('Enter Celcius: '))
 far = (9 / 5 * degree) + 32
-#print(far)
+print(far)
 
 """
 Ques 2 - n! factorial
@@ -15,7 +15,7 @@ Ques 2 - n! factorial
 f = 1
 n = 0
 for i in range(60):
-    #rint(n, '! =', f)
+    print(n, '! =', f)
     n += 1
     f *= n
 
@@ -25,7 +25,7 @@ Ques 3 -
 """
 n = 0
 while n < 10:
-    #print(n, "    ", n ** 2, '\t', n ** 3)
+    print(n, "    ", n ** 2, '\t', n ** 3)
     n += 1
 
 
@@ -38,7 +38,7 @@ def gcd(a, b):
     return gcd(b % a, a)
 
 
-#print(gcd(10, 15))
+print(gcd(10, 15))
 
 """
 Ques 5 - Fibonacci
@@ -96,7 +96,7 @@ def appear(bigNum, a):
     return newNum
 
 
-#print(appear(53832, 3))
+print(appear(53832, 3))
 
 ################################################################################
 ################################ Task__2 #######################################
@@ -253,14 +253,15 @@ def fibo_build(a, b):
 z = fibo_build(10, 20)
 #print(x(6))
 
-
+'''
 def smooth(f):
     def g(n):
-        return f*(n-1)+f*n+(n-1) / 3
+        return (f(n-1)+f(n)+f(n-1)) / 3
     return g
 
 
-print(smooth(9)(4))
+a = smooth(9)
+print(a)
 '''
 from turtle import *
 color('red', 'yellow')
