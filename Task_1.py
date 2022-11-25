@@ -4,7 +4,7 @@
 """
 Ques 1 - celsius to fahrenheit
 """
-degree = float(input('Enter Celcius: '))
+degree = float(input('Enter Celsius: '))
 far = (9 / 5 * degree) + 32
 print(far)
 
@@ -17,7 +17,6 @@ for i in range(60):
     print(n, '! =', f)
     n += 1
     f *= n
-
 
 """
 Ques 3 - table of power of 1, 2, 3 from 0 to 9.
@@ -66,7 +65,7 @@ print(fibo(9))
 """
 Ques 6 - Prefect number
 """
-def prefect_number(n):
+def perfect_number(n):
     i = 1
     sum = 0
     for i in range(i, n):
@@ -77,18 +76,19 @@ def prefect_number(n):
     return False
 
 
-if prefect_number(20):
-    print('Is prefect number')
+if perfect_number(20):
+    print('Is perfect number')
 else:
-    print('hara AleHa!')
+    print('Not a perfect number!')
 for i in range(10001):
-    if prefect_number(i):
+    if perfect_number(i):
         print(i)
-
 
 """
 Ques 7 - remove a digit from a positive integer.
 """
+
+
 def appear(bigNum, a):
     s, f, mul, newNum = 1, 10, 1, 0
     for i in range(5):
@@ -102,5 +102,3 @@ def appear(bigNum, a):
 
 
 print(appear(53832, 3))
-
-
