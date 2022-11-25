@@ -2,7 +2,7 @@
 ################################ TASK__1 #######################################
 ################################################################################
 """
-Ques 1 - celsius to far
+Ques 1 - celsius to fahrenheit
 """
 degree = float(input('Enter Celcius: '))
 far = (9 / 5 * degree) + 32
@@ -20,7 +20,7 @@ for i in range(60):
 
 
 """
-Ques 3 -
+Ques 3 - table of power of 1, 2, 3 from 0 to 9.
 """
 n = 0
 while n < 10:
@@ -28,10 +28,13 @@ while n < 10:
     n += 1
 
 
-"""
-Ques 4 -
-"""
 def gcd(a, b):
+    """
+    Question 4 - Greatest Common Divisor
+    :param a: first integer
+    :param b: second integer
+    :return: the second number until the first is zero in a recursive call with the remainder of both num.
+    """
     if a == 0:
         return b
     return gcd(b % a, a)
@@ -39,10 +42,13 @@ def gcd(a, b):
 
 print(gcd(10, 15))
 
-"""
-Ques 5 - Fibonacci
-"""
+
 def fibRe(n):
+    """
+    Question 5 - Recursive Fibonacci
+    :param n: integer number
+    :return: the fibonacci of n number
+    """
     if n <= 1:
         return n
     return fibRe(n - 1) + fibRe(n - 2)
@@ -81,7 +87,7 @@ for i in range(10001):
 
 
 """
-Ques 7 -
+Ques 7 - remove a digit from a positive integer.
 """
 def appear(bigNum, a):
     s, f, mul, newNum = 1, 10, 1, 0

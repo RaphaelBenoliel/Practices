@@ -37,8 +37,6 @@ class Student:
         return (self.first, self.last) > (other.first, other.last)
 
 
-
-
 v = Student('Raphael', 'Benoliel')
 r = Student('a', 'a')
 y = Student('a', 'a')
