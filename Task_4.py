@@ -75,7 +75,8 @@ class Student:
 v = Student('Raphael', 'Benoliel')
 r = Student('a', 'a')
 y = Student('a', 'a')
-
+print(v < r)
+print(v != y)
 v += 90
 v += 92
 v += 95
