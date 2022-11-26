@@ -12,14 +12,14 @@ class Student:
         s.g = list(self.g)
         if isinstance(x, int):
             s.g += [x, ]
-            print('grade was succesfully added...')
+            print('grade was successfully added...')
             return s
         else:
             print('Cannot add this value, Grade should be integer...')
             return s
 
     def __str__(self):
-        return f'Student name: {self.first} {self.last} Grade:{self.g}'
+        return f'Student name: {self.first} {self.last} Grade: {self.g}'
 
     def __lt__(self, other):
         if other.first < self.first:
@@ -62,10 +62,10 @@ class Student:
     def set_grade(self, grade):
         self.g = grade
 
-    def get_first(self, first):
+    def get_first(self):
         return self.first
 
-    def get_last(self, last):
+    def get_last(self):
         return self.last
 
     def get_grade(self, grade):
@@ -83,3 +83,6 @@ v += 95
 v += 100
 print(v.gpa())
 print(len(v))
+print(v)
+v.set_last(('****'))
+print(v)
