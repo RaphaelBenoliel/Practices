@@ -68,7 +68,7 @@ class Student:
     def get_last(self):
         return self.last
 
-    def get_grade(self, grade):
+    def get_grade(self):
         return self.g
 
 
